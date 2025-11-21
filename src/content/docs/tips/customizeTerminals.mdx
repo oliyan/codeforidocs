@@ -4,7 +4,8 @@ description: "Learn how to customize your PASE terminal prompt to display useful
 tags: ["PASE", "terminal", "git", "customization", "shell", "tips"]
 ---
 
-# Customizing your PASE Terminal Prompt
+import { Icon } from '@astrojs/starlight/components';
+
 
 Modification of the prompt string to display useful details in the PASE terminal can greatly improve your workflow and productivity. This guide will show you two methods to customize your terminal prompt: a simple method for basic information display, and an advanced method that includes Git status integration.
 
@@ -28,7 +29,7 @@ A customized terminal prompt helps you:
 
 By modifying the `PS1` environment variable, we can display useful information like username, server name, and current working directory.
 
-![Simple Terminal Prompt](/images/tips/pase-terminal-simple-prompt.png)
+![Simple Terminal Prompt](./images/basic_terminal_mod.png)
 
 This customization helps users know exactly where they're currently located without the need to issue a `pwd` command.
 
@@ -61,7 +62,7 @@ source ~/.profile
 
 By modifying the `PROMPT_COMMAND`, we can display the Git status directly on the prompt string. This replicates functionality similar to [posh-git](https://github.com/dahlbyk/posh-git) for PowerShell.
 
-![Advanced Terminal Prompt with Git Status](/images/tips/pase-terminal-git-prompt.png)
+![Advanced Terminal Prompt with Git Status](./images/advanced_terminal_mod.png)
 
 In this example:
 - `gitrepo` - Current folder name (which is a Git repository)
@@ -201,10 +202,9 @@ A status of `[master ≡ +0 ~2 -1 | +1 ~1 -0 !]` corresponds to the following `g
 
 ## References
 
-- [posh-git-sh on GitHub](https://github.com/lyze/posh-git-sh)
-- [posh-git for PowerShell](https://github.com/dahlbyk/posh-git)
-- [Bash Prompt HOWTO](https://tldp.org/HOWTO/Bash-Prompt-HOWTO/)
+- [posh-git-sh on GitHub](https://github.com/lyze/posh-git-sh)<Icon name="external" color="cyan" class="icon-inline" />
+- [posh-git for PowerShell](https://github.com/dahlbyk/posh-git)<Icon name="external" color="cyan" class="icon-inline" />
+- [Bash Prompt HOWTO](https://tldp.org/HOWTO/Bash-Prompt-HOWTO/)<Icon name="external" color="cyan" class="icon-inline" />
 
 ---
 
-*This guide was contributed by the Code for IBM i community. Terminal prompt customization is a matter of personal choice, so feel free to adjust these configurations to suit your workflow.*

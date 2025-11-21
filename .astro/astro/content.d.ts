@@ -530,6 +530,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tips/customizeTerminals.mdx": {
+	id: "tips/customizeTerminals.mdx";
+  slug: "tips/customizeterminals";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tips/protect.mdx": {
 	id: "tips/protect.mdx";
   slug: "tips/protect";
